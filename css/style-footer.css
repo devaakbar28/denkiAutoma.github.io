@@ -1,0 +1,183 @@
+/* Scroll Content */
+.scroll {
+  overflow: hidden;
+}
+
+.scroll-container {
+  width: 100vw; /* Lebar penuh viewport */
+  overflow: hidden; /* Menyembunyikan konten yang meluap */
+  white-space: nowrap; /* Agar konten tidak membungkus baris */
+  position: relative;
+}
+
+.scroll-content-brand,
+.scroll-content-experience {
+  display: inline-block;
+  white-space: nowrap; /* Agar gambar tetap dalam satu baris */
+}
+
+.scroll-content-brand {
+  animation: scroll1 15s linear infinite;
+}
+
+.scroll-content-brand img,
+.scroll-content-experience img {
+  height: 50px;
+  width: 10%;
+  margin-right: 5px; /* Spasi antar gambar */
+}
+
+@keyframes scroll1 {
+  from {
+    transform: translateX(100%); /* Mulai dari sebelah kanan */
+  }
+  to {
+    transform: translateX(-120%); /* Bergerak ke sebelah kiri */
+  }
+}
+
+.scroll-content-experience {
+  animation: scroll2 15s linear infinite;
+}
+
+@keyframes scroll2 {
+  from {
+    transform: translateX(-150%); /* Mulai dari sebelah kiri */
+  }
+  to {
+    transform: translateX(100%); /* Bergerak ke sebelah kanan */
+  }
+}
+
+.our-brands,
+.our-experience {
+  margin: 30px 0;
+}
+
+.our-brands .our,
+.our-experience .our1 {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.our-brands .btn,
+.our-experience .btn1 {
+  font-family: 'New Amsterdam', sans-serif;
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
+  background: rgb(235, 235, 235);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.our-brands .btn:hover,
+.our-experience .btn1:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer-body {
+  margin-top: 50px;
+  border-top: 2px solid black;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.footer-container {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 90%;
+  background-color: #fafafa; /* Ganti dengan rgb(250, 250, 250) untuk konsistensi */
+  margin: 20px auto 0;
+  padding-bottom: 30px;
+  line-height: 22px;
+  /* border-top: 3px solid black; */
+}
+
+.footer-name img {
+  display: block;
+  margin: 5px auto;
+  background-size: cover;
+  height: 50px;
+}
+
+.footer-content {
+  height: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.footer-content .name-tengah a,
+.footer-content .name-kiri a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-content .name-kiri,
+.footer-content .name-tengah,
+.footer-content .name-kanan {
+  width: 30%;
+}
+
+.footer-content .name-kiri p,
+.footer-content .name-tengah ul,
+.footer-content .name-kanan ul {
+  margin: 0;
+  text-align: left;
+}
+
+.footer-content .name-kiri p {
+  font-family: "Moderustic", sans-serif;
+  font-weight: 800;
+}
+
+.footer-content .name-kiri p.footer-atas {
+  font-size: 1rem;
+}
+
+.footer-content .name-kiri span {
+  color: rgb(170, 0, 0);
+}
+
+.footer-content .name-kiri p.footer-bawah {
+  font-size: 0.9rem;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: 700;
+  color: rgb(0, 34, 255);
+}
+
+.footer-content .name-tengah ul,
+.footer-content .name-kanan ul {
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+
+.copy {
+  width: 100%;
+  text-align: center;
+  background-color: #fdfdfd; /* Ganti dengan rgb(253, 253, 253) untuk konsistensi */
+}
+
+.copy p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 5px 0;
+  background-color: #d2d2d2; /* Ganti dengan rgb(210, 210, 210) untuk konsistensi */
+}

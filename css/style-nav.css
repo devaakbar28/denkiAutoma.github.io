@@ -1,0 +1,137 @@
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateY(-80%);
+    opacity: 0; 
+  }
+  to { transform: translateY(0); }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+  border-radius: 0 0 10px 10px;
+  animation: slideIn 1.2s ease-out;
+  transition: transform 0.5s ease-in-out;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .link-logo {
+  width: 400px;
+  display: flex;
+  align-items: center; /* Ensure logo and text are vertically aligned */
+  text-decoration: none; /* Ensure no underline on the logo link */
+  margin-right: -150px;
+}
+
+.navbar .logo {
+  width: 80px;
+  margin-right: 10px; /* Adjust margin if needed */
+}
+
+.navbar .name {
+  padding: 9px 0;
+}
+
+.navbar .name p.name-atas {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+  color: black;
+}
+
+.navbar .name p.name-atas span {
+  /* font-family: "Edu VIC WA NT Beginner", sans-serif; */
+  /* font-size: 1.5rem; */
+  color: rgb(170, 0, 0);
+  /* margin-top: -20px; */
+}
+
+.navbar .name p.name-bawah {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(0, 34, 255);
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: 700;
+}
+
+.navbar div.navbar-nav {
+  text-align: left;
+  display: flex; /* Ensure nav items are displayed inline */
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  text-shadow: 0 1px 20px rgba(255, 255, 255);
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem; /* Add padding to make links easier to click */
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(170, 0, 0);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid rgb(170, 0, 0);
+  transform: scaleX(0);
+  transition: transform 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar div.navbar-extra {
+  display: flex; /* Ensure extra buttons are displayed inline */
+  align-items: center; /* Vertically align extra items */
+  margin-left: -200px;
+}
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 5px;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgb(170, 0, 0);
+  transition: 0.2s linear;
+}
+
+#menu {
+  display: none;
+}
