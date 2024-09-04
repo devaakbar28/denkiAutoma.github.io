@@ -1,3 +1,5 @@
+alert('Dimohon dibukaDimohon Buka Website Ini di Laptop atau di Komputer agar lebih Maksimal, Sedang PROSES Responsif Website.')
+
 // Loaded Website
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
