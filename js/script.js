@@ -155,35 +155,35 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // slideShow 
-let slideIndex = 0;
-showSlides();
+// let slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  let slides = document.querySelectorAll(".mySlides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
+// function showSlides() {
+//   let slides = document.querySelectorAll(".mySlides");
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+//   setTimeout(showSlides, 4000); // Change image every 4 seconds
+// }
 
-function plusSlides(n) {
-  let slides = document.querySelectorAll(".mySlides");
-  slideIndex += n;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  if (slideIndex < 1) {
-    slideIndex = slides.length;
-  }
-  showSlides(); // Update slide display
-}
+// function plusSlides(n) {
+//   let slides = document.querySelectorAll(".mySlides");
+//   slideIndex += n;
+//   if (slideIndex > slides.length) {
+//     slideIndex = 1;
+//   }
+//   if (slideIndex < 1) {
+//     slideIndex = slides.length;
+//   }
+//   showSlides(); // Update slide display
+// }
 
-showSlides(); // Initialize slideshow
+// showSlides(); // Initialize slideshow
 
 // Maps Initialization
 var map = L.map("map").setView([-6.243147725946436, 107.0945891514543], 25); // Koordinat pusat dan tingkat zoom
