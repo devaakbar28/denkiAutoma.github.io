@@ -11,11 +11,13 @@
 }
 
 @keyframes slideIn {
-  from { 
+  from {
     transform: translateY(-80%);
-    opacity: 0; 
+    opacity: 0;
   }
-  to { transform: translateY(0); }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .navbar {
@@ -31,7 +33,7 @@
   border-radius: 0 0 10px 10px;
   animation: slideIn 1.2s ease-out;
   transition: transform 0.5s ease-in-out;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
@@ -40,7 +42,7 @@
 }
 
 .navbar:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
 }
 
 .navbar .link-logo {
@@ -95,7 +97,7 @@
   font-weight: 600;
   margin: 0 1rem;
   text-decoration: none; /* Remove underline from links */
-  padding: 0.5rem; /* Add padding to make links easier to click */
+  padding: 1.5rem; /* Add padding to make links easier to click */
 }
 
 .navbar .navbar-nav a:hover {
@@ -113,6 +115,91 @@
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
+}
+
+.navbar-nav .dropdown-project {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-nav .dropdown-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-nav .dropdown-project .dropdown-content {
+  display: block; /* Menetapkan display default */
+  font-size: 1rem;
+  position: absolute;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  max-height: 0; /* Mulai dengan max-height 0 untuk animasi */
+  opacity: 0; /* Mulai dengan opacity 0 */
+  overflow: hidden; /* Menghindari konten yang meluap */
+  transition: max-height 0.6s ease, opacity 0.6s ease; /* Transisi untuk max-height dan opacity */
+}
+
+.navbar-nav .dropdown-project .dropdown-content a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding: 15px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav .dropdown-project .dropdown-content a:hover {
+  color: rgb(170, 0, 0);
+}
+
+.navbar-nav .dropdown-project:hover .dropdown-content {
+  max-height: 200px; /* Menetapkan max-height saat dropdown terlihat */
+  opacity: 1; /* Opacity 1 saat dropdown terlihat */
+}
+
+.navbar-nav .dropdown-about {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-nav .dropdown-about .dropdown-content {
+  display: block; /* Menetapkan display default */
+  font-size: 1rem;
+  position: absolute;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  max-height: 0; /* Mulai dengan max-height 0 untuk animasi */
+  opacity: 0; /* Mulai dengan opacity 0 */
+  overflow: hidden; /* Menghindari konten yang meluap */
+  transition: max-height 0.6s ease, opacity 0.6s ease; /* Transisi untuk max-height dan opacity */
+}
+
+.navbar-nav .dropdown-about .dropdown-content a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding: 15px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav .dropdown-about .dropdown-content a:hover {
+  color: rgb(170, 0, 0);
+}
+
+.navbar-nav .dropdown-about:hover .dropdown-content {
+  max-height: 200px; /* Menetapkan max-height saat dropdown terlihat */
+  opacity: 1; /* Opacity 1 saat dropdown terlihat */
 }
 
 .navbar div.navbar-extra {

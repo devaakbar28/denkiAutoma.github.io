@@ -3,6 +3,33 @@ window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
 
+// // Fungsi untuk membuka atau menutup dropdown
+// function toggleDropdown() {
+//   var dropdownMenu = document.getElementById("dropdownMenu");
+  
+//   // Periksa apakah dropdown saat ini ditampilkan
+//   if (dropdownMenu.style.display === "block") {
+//       // Sembunyikan dropdown jika sudah ditampilkan
+//       dropdownMenu.style.display = "none";
+//   } else {
+//       // Tampilkan dropdown jika tersembunyi
+//       dropdownMenu.style.display = "block";
+//   }
+// }
+
+// // Klik di luar dropdown untuk menutup
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropdown-btn')) {
+//       var dropdowns = document.getElementsByClassName("dropdown-content");
+//       for (var i = 0; i < dropdowns.length; i++) {
+//           var openDropdown = dropdowns[i];
+//           if (openDropdown.style.display === 'block') {
+//               openDropdown.style.display = 'none';
+//           }
+//       }
+//   }
+// }
+
 // Debounce function to limit the rate of function execution
 const debounce = (func, wait) => {
   let timeout;
