@@ -1,0 +1,40 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+  grid-template-rows: 20vh calc(50% - 50px) calc(50% - 50px);
+}
+
+.gallery h1,
+.gallery h2 {
+  grid-column: 1 / span 4;
+}
+
+.gallery h1 {
+  font-family: "Edu VIC WA NT Beginner", sans-serif;
+  color: #80ed99;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 30px 20px;
+}
+
+.gallery .project {
+  margin: 25px 20px;
+  margin-top: 0px;
+  background: #212529;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.gallery .project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover;
+  border: none;
+  margin-top: -50px;
+}
