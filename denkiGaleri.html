@@ -3,22 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-galery.css">
 
-    <!-- <script src="js/script.js"></script> -->
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style-galery.css">
+    <link rel="stylesheet" href="css/style-nav.css">
+    <link rel="stylesheet" href="css/style-format.css" />
+    <link rel="stylesheet" href="css/keyFrames.css" />
+    <link rel="stylesheet" href="css/style-footer.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Moderustic:wght@300..800&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Map -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Loading Gambar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+
+    <title>Gallery | Denki Automa Indonesia</title>
   </head>
   <body>
-    <div class="swiper-slide gallery">
-      <h1>Galeri Saya</h1>
-      <div class="project"><img src="img/foto10.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto11.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto12.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto13.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto14.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto15.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto15.jpg" alt="" /></div>
-      <div class="project"><img src="img/foto15.jpg" alt="" /></div>
+    <!-- Navigation Start -->
+    <nav class="navbar">
+      <a href="index.html" class="link-logo">
+        <img src="img/brands/1.png" alt="Denki Automa Logo" class="logo" />
+        <div class="name">
+          <p class="name-atas">PT Denki <span>Automa</span> Indonesia</p>
+          <p class="name-bawah">Good & Smart Solutions</p>
+        </div>
+      </a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Company</a>
+        <a href="denkiWorks.html">Our Works</a>
+
+        <div class="dropdown-project">
+          <a href="" class="dropdown-btn">Our Project</a>
+          <div class="dropdown-content">
+            <a href="">Brands Project</a>
+            <a href="">Specialist Project</a>
+          </div>
+        </div>
+
+        <div class="dropdown-about">
+          <a href="" class="dropdown-btn">About Us</a>
+          <div class="dropdown-content">
+            <a href="">Download PDF</a>
+            <a href="">Gallery</a>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="" id="search" class="icon">
+          <i data-feather="search"></i>
+        </a>
+        <a href="" id="menu" class="icon">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Navigation End -->
+    <!-- Hero Start -->
+    <section id="home">
+      <div class="hero">
+        <div class="hero-tulisan">
+          <h2>Welcome to PT Denki <span>Automa</span> Indonesia</h2>
+          <p class="atas">Good And Smart Solutions</p>
+          <p class="bawah">Your trusted partner for all service needs</p>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Gallery Start -->
+     <div class="galeri-utama">
+      <h1 class="galeri-atas">About Gallery</h1>
+      <h2 class="mekanikal">Mekanikal
+        <img src="img/icon/mechanical.png" alt="">
+      </h2>
+      <div class="galeri">
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto11.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto13.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto15.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto16.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+      </div>
+      <h2 class="elektrikal">Elektrikal
+        <img src="img/icon/electrical.png" alt="">
+      </h2>
+      <div class="galeri">
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto11.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto13.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto15.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto16.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+      </div>
+
+      <h2 class="maintenance">Maintenance & Modification
+        <img src="img/icon/maintenance.png" alt="">
+      </h2>
+      <div class="galeri">
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto11.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto13.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto15.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto16.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto17.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto14.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto12.jpg" alt=""></div>
+        <div class="galeri-child"><img src="img/foto10.jpg" alt=""></div>
+      </div>
+     </div>
+
+     <!-- Footer -->
+    <div class="footer-body">
+      <div class="footer-container">
+        <div class="footer-name">
+          <a href="index.html">
+            <img src="img/brands/1.png" alt="" />
+          </a>
+        </div>
+        <div class="footer-content">
+          <div class="name-kiri">
+            <a href="">
+              <p class="footer-atas">PT Denki <span>Automa</span> Indonesia</p>
+              <p class="footer-bawah">Good And Smart Solutions</p>
+            </a>
+          </div>
+          <div class="name-tengah">
+            <ul>
+              <li
+                style="
+                  font-weight: 800;
+                  font-family: 'Moderustic', sans-serif;
+                  font-size: 1.2rem;
+                "
+              >
+                About Denki Automa Indonesia
+              </li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Brand Project</a></li>
+              <li><a href="">Experience Project</a></li>
+            </ul>
+          </div>
+          <div class="name-kanan">
+            <ul>
+              <li
+                style="
+                  font-weight: 800;
+                  font-family: 'Moderustic', sans-serif;
+                  font-size: 1.2rem;
+                "
+              >
+                Head Operating Office
+              </li>
+              <li>Jl. Hidayah M126/05 Wanajaya Cibitung Bekasi</li>
+              <li>Telp : +62-821-8953-6996</li>
+              <li>Fax : +62-821-8953-6996</li>
+              <li>E-mail : <a href="">info@denki-automa.co.id</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>Copyright&copy; 2024 - PT Denki Automa Indonesia</p>
+      </div>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+      feather.replace();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
